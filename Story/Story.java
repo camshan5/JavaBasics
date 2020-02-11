@@ -14,8 +14,13 @@ public class Story {
 
         String name = console.readLine("Enter your name:\n=>");
         String adjective = console.readLine("Enter an adjective:\n=>");
+        String noun = console.readLine("Enter a noun:\n=>");
+        String adverb = console.readLine("Enter an adverb:\n=>");
+        String verb = console.readLine("Enter a verb ending with -ing:\n=>");
 
-        console.printf("%s is very %s\n", name, adjective);
+        console.printf("Story:\n------\n");
+        console.printf("%s is a %s %s.  ", name, adjective, noun);
+        console.printf("They are always %s %s.\n", adverb, verb);
 
     }
 }
